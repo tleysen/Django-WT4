@@ -1,7 +1,7 @@
- <h1>Quotes quotes quotes!</h1>
- <br/>
- <ul>
-    {% for a in author_names %}
-        <li><a href='/quotes/{{ a }}/'>{{ a }}</a></li>
-    {% endfor %}
+<h1>Here are your movies : </h1>
+<br/>
+<ul>
+			{% for o in output %}
+							<li>{{ o }}</li>
+			{% endfor %}
 </ul>

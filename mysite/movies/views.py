@@ -7,6 +7,6 @@ import string
 
 def index(request):
     for key in r.scan_iter("user:*"):
-        output = r.get(key)
+        output += r.get(key)
 
-    return render(request, 'movies/index.html')
+    return render(request, 'movies/index.html', {'output' : output})
